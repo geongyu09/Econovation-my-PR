@@ -9,7 +9,7 @@ export default function Content({
   listOfImageDescription,
 }: Readonly<ContentType>) {
   return (
-    <section className="">
+    <section className="w-full">
       <div className="border-l-[5px] border-gray-950 px-2 ">
         <h2 className="text-2xl font-bold mt-4">{title}</h2>
       </div>

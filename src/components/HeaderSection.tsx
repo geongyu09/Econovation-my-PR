@@ -16,7 +16,7 @@ export default function HeaderSection() {
         <p className="">에코노베이션 26기 FE</p>
       </div>
 
-      <ul className="flex gap-40 mt-10 text-xl font-semibold cursor-default">
+      <ul className="flex flex-col md:flex-row md:gap-40 gap-5 mt-10 text-xl font-semibold cursor-default">
         <li className="after:border-[0.15rem] after:mt-2 after:block after:border-emerald-400">
           Portfolio
         </li>
