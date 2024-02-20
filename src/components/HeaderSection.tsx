@@ -2,9 +2,9 @@ export default function HeaderSection() {
   return (
     <header className="flex justify-center items-center flex-col p-7 border-b shadow-xl">
       <div
-        className="w-44 h-44 rounded-full bg-slate-300"
+        className="w-44 h-44 rounded-full shadow-md"
         style={{
-          backgroundImage: "url('/profile.jpg')",
+          backgroundImage: "url('/박건규.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
