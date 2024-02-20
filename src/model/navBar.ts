@@ -6,6 +6,7 @@ export type ContentType = {
     title: string;
     image: string;
     description: string;
+    url: string;
   }[];
   listOfImage?: string[];
 };

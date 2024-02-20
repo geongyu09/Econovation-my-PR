@@ -1,4 +1,5 @@
 import { ContentType } from "@/model/navBar";
+import Link from "next/link";
 
 export default function Content({
   title,
@@ -22,8 +23,8 @@ export default function Content({
       )}
       {listOfImageDescription && (
         <div className="mt-5 flex flex-col gap-5">
-          {listOfImageDescription.map(({ description, image, title }) => (
-            <div key={image} className="flex gap-2">
+          {listOfImageDescription.map(({ description, image, title, url }) => (
+            <Link href={url} key={image} className="flex gap-2">
               <img
                 src={image}
                 alt={description}
@@ -33,7 +34,7 @@ export default function Content({
                 <h3 className="text-xl font-semibold ">{title}</h3>
                 <p className="">{description}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       )}

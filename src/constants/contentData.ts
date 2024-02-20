@@ -20,11 +20,13 @@ export const contentData: ContentType[] = [
         title: "너와 그린 기린 그림",
         image: "/기린그림.jpg",
         description: "너와 그린 기린 그림",
+        url: "https://github.com/JNU-econovation/girin-grim",
       },
       {
         title: "econo-recruit",
         image: "/recruit.jpg",
         description: "econo-recruit",
+        url: "https://github.com/JNU-econovation/econo-recruit-fe",
       },
     ],
   },

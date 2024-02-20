@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HeaderSection() {
   return (
     <header className="flex justify-center items-center flex-col p-7 border-b shadow-xl">
@@ -19,7 +21,9 @@ export default function HeaderSection() {
           Portfolio
         </li>
         <li className="text-gray-400">Resume</li>
-        <li className="text-gray-400">Contact</li>
+        <Link href={"https://www.instagram.com/gyu_gyupark/?hl=ko"}>
+          <li className="text-gray-400">Contact</li>
+        </Link>
       </ul>
     </header>
   );
