@@ -1,13 +1,4 @@
-type Props = {
-  title: string;
-  description?: string;
-  listOfDescription?: string[];
-  listOfImageDescription?: {
-    image: string;
-    description: string;
-  }[];
-  listOfImage?: string[];
-};
+import { ContentType } from "@/model/navBar";
 
 export default function Content({
   title,
@@ -15,7 +6,7 @@ export default function Content({
   listOfImage,
   listOfDescription,
   listOfImageDescription,
-}: Readonly<Props>) {
+}: Readonly<ContentType>) {
   return (
     <section className="">
       <div className="border-l-[5px] border-gray-950 px-2 ">
@@ -31,14 +22,17 @@ export default function Content({
       )}
       {listOfImageDescription && (
         <div className="mt-5 flex flex-col gap-5">
-          {listOfImageDescription.map(({ description, image }) => (
+          {listOfImageDescription.map(({ description, image, title }) => (
             <div key={image} className="flex gap-2">
               <img
                 src={image}
                 alt={description}
                 className="w-1/4 rounded-lg overflow-hidden shadow-sm"
               />
-              <p>{description}</p>
+              <div>
+                <h3 className="text-xl font-semibold ">{title}</h3>
+                <p className="">{description}</p>
+              </div>
             </div>
           ))}
         </div>
