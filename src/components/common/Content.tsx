@@ -15,7 +15,7 @@ export default function Content({
       </div>
       {description && <p className="mt-2">{description}</p>}
       {listOfDescription && (
-        <ul className="mt-2 list-disc list-inside">
+        <ul className="mt-2 list-disc list-inside flex flex-col gap-2">
           {listOfDescription.map((item) => (
             <li key={item}>{item}</li>
           ))}
